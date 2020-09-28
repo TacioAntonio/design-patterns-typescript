@@ -14,7 +14,7 @@ Em geral, um padrão tem quatro elementos essenciais:
 4. As consequências são os resultados e analises das vantagens e desvantagens – trade-offs – da aplicação do padrão. Embora as consequências sejam raramente mencionadas quando descrevemos decisões de projeto, elas são criticas para a avaliação de alternativas de projetos e para a compreensão dos custos e benefícios da aplicação do padrão. As consequências para o software frequentemente envolvem balanceamento entre espaço e tempo. Elas também podem abordar aspectos sobre linguagens e implementação. Uma vez que a reutilização é frequentemente um fator no projeto orientado a objetos, as consequências de um padrão incluem o seu impacto sobre a flexibilidade, a extensibilidade ou a portabilidade de um sistema. Relacionar essas consequências explicitamente ajuda a compreendê-las e avalia-las. (GAMMA; HELM; JOHNSON; VLISSIDES, 1994, p. 19)
 
 
-![Catalog](./img/catalog.png)
+![Catalog](./img/facotryMethod.png)
 > Design patterns GoF
 
 ## Description
