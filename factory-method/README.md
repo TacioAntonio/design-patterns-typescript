@@ -1,7 +1,7 @@
-# Factory Method _(Criacional)_
+# Factory Method _Criacional_
 
-![FactoryMethod](./img/catalog.png)
-> Factory Method _(Criacional)_
+![FactoryMethod](./img/facotryMethod.png)
+> Factory Method _Criacional_
 
 No padrão Factory, criamos o objeto sem expor a lógica de criação ao cliente e nos referimos ao objeto recém-criado usando uma interface comum. - Tutotrialspoint
 Fornece um método estático encapsulado em uma classe chamada fábrica, a fim de ocultar a lógica de implementação e fazer com que o código do cliente se concentre no uso em vez da inicialização de novos objetos. - Osmani
