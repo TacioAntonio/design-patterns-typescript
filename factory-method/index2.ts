@@ -28,7 +28,7 @@ class ShapeFactory {
     }
         
 
-    getShape(typeShape: any): any {
+    getShape(typeShape: string): Shape {
         // A ideia do factory seria esconder o new, a instanciação do objeto, podendo alguém usar sem se preocupar em instanciar o Circle, Square,... assim evitando quebra o sistema por exemplo, porque se preocuparia somente com ShapeFactory
         return new this.shapeTypes[typeShape]() 
     }
