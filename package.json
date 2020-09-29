@@ -1,0 +1,24 @@
+{
+  "name": "design-patterns-typescript",
+  "version": "1.0.0",
+  "description": "Design Patterns são descrições de objetos e classes comunicantes que precisam ser personalizadas para resolver um problema geral de projeto num contexto particular.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts": "npx tsc .\\factory-method\\factory-sorting-algorithms\\src\\index.ts",
+    "node": "node .\\factory-method\\factory-sorting-algorithms\\src\\index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TacioAntonio/design-patterns-typescript.git"
+  },
+  "author": "Tácio Antônio <tacioantonio10@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TacioAntonio/design-patterns-typescript/issues"
+  },
+  "homepage": "https://github.com/TacioAntonio/design-patterns-typescript#readme",
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  }
+}
