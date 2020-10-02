@@ -1,7 +1,9 @@
+> Esse repositório possui como propósito o estudo dos design patterns apresentados pela GoF, ente outros design patterns com seus próprios objetivos.
+
 # Design Patterns
 Design Patterns são descrições de objetos e classes comunicantes que precisam ser personalizadas para resolver um problema geral de projeto num contexto particular.
 
-## Types of patterns 
+## Tipos de padrões
 Os padrões de projeto são classificados por dois critérios. O primeiro critério, chamado finalidade, reflete o que um padrão faz. Os padrões criacionais se concentram na “criação, composição e representação” de objetos e dispõem de mecanismos que facilitam a instanciação de objetos em um sistema e que impõem “restrições sobre o tipo e numero de objetos que podem ser criados em um sistema”. 
 Os padrões estruturais focalizam problemas e soluções associadas a como classes e objetos são organizados e integrados para construir uma estrutura maior. Os padrões comportamentais tratam de problemas associados a atribuição de responsabilidade ente objetos e a maneira como a comunicação é realizada entre objetos. (Pressman, 2016, p. 350)<br/>
 O segundo critério, chamado escopo, especifica se o padrão se aplica primariamente a classes ou a objetos. Os padrões para classes lidam com os relacionamentos entre classes e suas subclasses. Esses relacionamentos são estabelecidos através do mecanismo de herança, assim eles são estáticos – fixados em tempo de compilação.<br/>
@@ -17,7 +19,7 @@ Em geral, um padrão tem quatro elementos essenciais:
 ![Catalog](./img/catalog.png)
 > Design patterns GoF
 
-## Description
+## Descrição
 - **Abstract Factory:** Fornece uma interface para criação de famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
 - **Adapter:** Converte a interface de uma classe em outra interface esperada pelos clientes. O Adapter permite que certas classes trabalhem em conjunto, pois de outra forma seria impossível por causa de suas interfaces incompatíveis.
 - **Bridge:** Separa uma abstração da sua implementação, de modo que as duas possam variar independentemente.
@@ -41,3 +43,12 @@ Em geral, um padrão tem quatro elementos essenciais:
 - **Strategy:** Define uma família de algoritmos, encapsula cada um deles e os torna intercambiáveis. O Strategy permite que o algoritmo varie independentemente dos clientes que o utilizam.
 - **Template Method:** Define o esqueleto de um algoritmo em uma operação, postergando a definição de alguns passos para subclasses. O Template Method permite que as subclasses redefinam certos passos de um algoritmo sem mudar sua estrutura.
 - **Visitor:** Representa uma operação a ser executada sobre os elementos da estrutura de um objeto. O Visitor permite que você defina uma nova operação sem mudar as classes dos elementos sobre os quais opera.
+
+Os padrões de projeto apresentados pela GoF - GAMMA; HELM; JOHNSON; VLISSIDES, capturam somente uma fração do que um especialista pode conhecer. Existem diversos outros padrões de projeto com o proposito de lidar com concorrência ou programação distribuída ou programação para tempo real. Cada uma dessas áreas possuem seus próprios padrões.
+
+![DesignPatternRepositories](./img/designPatternRepositories.png)
+
+**Outras fontes para design patterns:**
+- [Addyosmani](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#factorypatternjavascript)
+- [Java design patterns](https://java-design-patterns.com/patterns/)
+- [Tutorialspoint](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm)
