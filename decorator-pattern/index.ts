@@ -1,24 +1,37 @@
-function FactoryDecorator(value: string) {
-    return function (target: any, key: string) {
-        let name = value;
+/**
+ * Fonte: {@link https://dev.to/danywalls/using-property-decorators-in-typescript-with-a-real-example-44e}
+ */
+function Min(limit: number) {
+    return function (target: Object, key: string | symbol) {
+        let value: string;
 
-        const getter = () => name;
-        const setter = (nextName: string) => {
-            name = nextName;
+        const getter = () => value;
+        const setter = (next: string) => {
+            if(next.length < limit) {
+                Object.defineProperty(target, 'errors', {
+                    value: `Your password should be bigger than ${limit}`
+                });
+            } 
+
+            value = next;
         }
 
         Object.defineProperty(target, key, {
             get: getter,
-            set: setter,
-            enumerable: true,
-            configurable: true
+            set: setter
         })
     };
   }
  
 class Person {
-    @FactoryDecorator('Default')
-    name: string;
+    [args: string]: any;
+
+    @Min(8)
+    password: string;
+    
+    constructor(password: string){
+        this.password = password;
+    }
 }
  
-console.log(new Person().name);
+console.log(new Person('123').errors);
