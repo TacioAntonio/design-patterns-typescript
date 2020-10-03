@@ -13,5 +13,5 @@ class FactorySortingAlgorithms {
 }
 
 const factorySortingAlgorithms = new FactorySortingAlgorithms()
-const q = factorySortingAlgorithms.createSorting('bubbleSort').sorting([8,5,6,95,62])
-console.log(q)
+const sortingAlgorithm = factorySortingAlgorithms.createSorting('bubbleSort').sorting([8,5,6,95,62])
+console.log(sortingAlgorithm)
