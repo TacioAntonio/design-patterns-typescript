@@ -29,7 +29,6 @@ class Subject {
 
 }
 
-
 class FirstObserver  {
     subject!: Subject;
 
