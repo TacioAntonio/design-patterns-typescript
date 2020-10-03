@@ -1,5 +1,5 @@
 # Debounce Pattern
-Ao acionar uma determinada ação que esteja encapsulada pelo debounce, o código de execução é postergado até que o tempo que foi definido posteriormente no debounce acabe, só então a implementação contida no debounce é disparada.
+Ao acionar uma determinada ação que esteja encapsulada pelo debounce, o código de execução é postergado até que o tempo que foi definido posteriormente no debounce acabe, só então a função com a implementação contida no debounce é disparada.
 
 # Aplicabilidade
 Segundo Chris Coyier, esses são alguns exemplos de uso do debounce:
