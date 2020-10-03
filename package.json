@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ts": "npx tsc .\\factory-method\\factory-sorting-algorithms\\src\\index.ts",
-    "node": "node .\\factory-method\\factory-sorting-algorithms\\src\\index.js"
+    "ts": "npx tsc .\\debounce-pattern\\index.ts",
+    "node": "node .\\factory-method\\factory-sorting-algorithms\\src\\index.js",
+    "tsc": "tsc --target ES5 --experimentalDecorators"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "homepage": "https://github.com/TacioAntonio/design-patterns-typescript#readme",
   "devDependencies": {
     "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
   }
 }
