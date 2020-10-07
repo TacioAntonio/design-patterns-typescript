@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div, img {
+            width: 240px;
+            height: 320px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div><img data-src="http://placehold.it/750x750?text=img0"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img1"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img2"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img3"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img4"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img5"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img6"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img7"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img8"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img9"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img10"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img11"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img12"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img13"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img14"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img15"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img16"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img17"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img18"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img19"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img20"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img21"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img22"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img23"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img24"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img25"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img26"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img27"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img28"></div>
+    <div><img data-src="http://placehold.it/750x750?text=img29"></div>
+    <script>
+        (() => {
+            const $ = (selector) => document.querySelectorAll(selector);
+            const elements = $('img');
+
+            const activateScroll = () => {
+                elements.forEach((element) => {
+                    if(element.getBoundingClientRect().top < window.innerHeight) {
+                        element.src = element.getAttribute('data-src');
+                    }
+                })
+            }
+
+            window.addEventListener('scroll', activateScroll)
+        })()
+    </script>
+</html>

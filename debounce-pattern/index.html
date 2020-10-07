@@ -9,22 +9,27 @@
         <input type="text" id="name">
         <span></span>
         <script>
-            let name = document.querySelector('input#name');
-            let span = document.querySelector('span');
+            /**
+             * Decorator com debounce: {@link https://medium.com/time-machine/how-to-implement-debounce-decorator-2e963b70cd27}
+             */
+            (() => {
+                let name = document.querySelector('input#name');
+                let span = document.querySelector('span');
 
-            function debounce(fn, wait) {
-                var timer = null;
-                return function () {
-                    clearTimeout(timer);
-                    timer = setTimeout(fn, wait);
-                };
-            }
-            
-            function writeSpan(e) { span.innerHTML = e.target.value; }
+                function debounce(fn, wait) {
+                    var timer = null;
+                    return function () {
+                        clearTimeout(timer);
+                        timer = setTimeout(fn, wait);
+                    };
+                }
+                
+                function writeSpan(e) { span.innerHTML = e.target.value; }
 
-            name.addEventListener('keyup', function (e) {
-                debounce(() => { writeSpan(e) }, 2000)();
-            });
+                name.addEventListener('keyup', function (e) {
+                    debounce(() => { writeSpan(e) }, 2000)();
+                });
+            })()
         </script>
     </body>
 </html>
