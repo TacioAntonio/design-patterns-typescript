@@ -1,4 +1,4 @@
-> Esse repositório possui como propósito o estudo dos design patterns apresentados pela GoF, ente outros design patterns com seus próprios objetivos.
+> Esse repositório possui como propósito o estudo dos design patterns apresentados pela GoF, entre outros design patterns com seus próprios objetivos.
 
 # Design Patterns
 Design Patterns são descrições de objetos e classes comunicantes que precisam ser personalizadas para resolver um problema geral de projeto num contexto particular.
